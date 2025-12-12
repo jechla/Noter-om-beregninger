@@ -1,0 +1,7 @@
+[book]
+title = "Noter om beregninger"
+authors = ["Jens Chr. Larsen"]
+language = "da"
+
+[output.html]
+mathjax-support = true
