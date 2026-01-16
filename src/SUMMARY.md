@@ -2,4 +2,6 @@
 
 [Indledning](./indledning.md)
 
-- [Chapter 1](./chapter_1.md)
+- [Følger](./sequenses.md)
+- [Endelige rækker](./finiteseries.md)
+- [Uendelige rækker](./infiniteseries.md)
