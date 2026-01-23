@@ -4,7 +4,7 @@ Følger optræder mange steder i matematik og de spiller forskellige roller. Det
 
 Fordi vi ikke kan være præcise må vi kunne vurdere, hvor *upræcise* vi er. Derfor indfører vi begrebet om fejl neden for.
 
-## Følger og konvergens
+## Følger
 
 Vi begynder med en definition:
 
