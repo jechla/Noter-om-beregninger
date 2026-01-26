@@ -8,4 +8,8 @@ language = "da"
 [output.html]
 mathjax-support = true
 
+[output.pdf]
+landscape = false
+scale = 0.7
+
 
