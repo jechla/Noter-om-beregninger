@@ -1,8 +1,8 @@
 # Følger
 
-Følger optræder mange steder i matematik og de spiller forskellige roller. Det vi vil anvende dem til er at nærme os tal, som vi ikke umiddelbart kan beregne. En tilnærmelse til et tal er ikke præcist, men de tal vi vil beregne består ofte af uendelig mange decimaler, så vi kan alligevel ikke skrive dem op. Derfor er det tilstrækkeligt at vi nærmer os tallet. 
+Følger optræder mange steder i matematik, og de spiller forskellige roller. Det, vi vil anvende dem til, er at nærme os tal, som vi ikke umiddelbart kan beregne. En tilnærmelse til et tal er ikke præcis, men de tal vi vil beregne består ofte af uendelig mange decimaler, så vi kan alligevel ikke skrive dem op. Derfor er det tilstrækkeligt, at vi nærmer os tallet. 
 
-Fordi vi ikke kan være præcise må vi kunne vurdere, hvor *upræcise* vi er. Derfor indfører vi begrebet om fejl neden for.
+Fordi vi ikke kan være præcise, må vi kunne vurdere, hvor *upræcise* vi er. Derfor indfører vi begrebet om fejl neden for.
 
 ## Følger
 
@@ -20,9 +20,8 @@ Det første eksempel er følgen:
 
 Her angiver vi en metode til at beregne de enkelte tal i en følge. Fx når \\(n=1\\) så er det første tal i følgen \\(\left\\{\frac{1}{1}\right\\}=1\\), når \\(n=2\\), så er det andet tal i følgen: \\(\left\\{\frac{1}{2}\right\\}=\frac{1}{2}\\), osv. Dermed kan opskrive de første tal i følgen sådan:
 \\[1,\ \frac{1}{2},\ \frac{1}{3},\ \frac{1}{4},\ \frac{1}{5},\ \ldots\\]
-Det et ser ud til at tallene i følgen bliver mindre og mindre, og kommer tættere og tættere på 0, faktisk vil tal nummer 1 mio, være \\(\frac{1}{1000000}\\). Noget tyder på, at jo højere vi kommer op i numrene i følgen, jo tættere på kommer vi på 0. Vi siger, at følgen *konvergerer* mod 0. Vi vil gøre dette begreb mere præcist neden for. Vi giver dog lige et eksempel til.
+Det ser ud til, at tallene i følgen bliver mindre og mindre, og kommer tættere og tættere på 0, faktisk vil tal nummer 1 mio, være \\(\frac{1}{1000000}\\). Noget tyder på, at jo højere vi kommer op i numrene i følgen, jo tættere på kommer vi på 0. Vi siger, at følgen *konvergerer* mod 0. Vi vil gøre dette begreb mere præcist neden for. Vi giver dog lige et eksempel til.
 
-<!-- fire eksempler 1/n, (n)^-1, x^n, kvadratrod (newtons metode) -->
 
 ### Eksempel 2
 Det andet eksempel er følgen:
@@ -31,7 +30,7 @@ Det andet eksempel er følgen:
 Igen har vi en metode til at beregne de enkelte tal i følgen. Fx når \\(n=1\\) så er det første tal i følgen \\(\left\\{(-1)^1\right\\}=-1\\), når \\(n=2\\), så er det andet tal i følgen: \\(\left\\{(-1)^2\right\\}=1\\), osv. Dermed kan opskrive de første tal i følgen sådan:
 \\[-1,\ 1,\ -1,\ 1,\ -1,\ \ldots\\]
 
-Med andre ord skifter følgen mellem tallene -1 og 1 uanset hvilke numre i følgen, vi er ved. Dermed nærmer følgen sig ikke noget og vi siger, at den ikke konvergerer, men derimod divergerer.
+Med andre ord skifter følgen mellem tallene -1 og 1, uanset hvilke numre i følgen vi er ved. Dermed nærmer følgen sig ikke noget, og vi siger, at den ikke konvergerer, men derimod *divergerer*.
 
 ## Konvergens
 Vi vil nu give en definition af begrebet konvergens. Følgen i eksempel 1 konvergerer mod 0. Men da følgen består af brøker, kan den aldrig blive 0, så konvergensen består i, at følgen kan komme lige så tæt på 0, som vi har lyst til. Forskellen mellem følgen \\( \\{x_n\\}\\) og det følgen konvergerer mod \\(L\\) skrives \\(|x_n-L|\\), hvor \\(|\ |\\) er den numeriske værdi. Dette vil vi kalde *fejlen*, og vi vil benytte det græske bogstav epsilon \\(\varepsilon\\) til at betegne en generel fejl.
@@ -42,7 +41,7 @@ Vi kommer til at indføre to symboler. Det første er \\(\forall\\) som læses "
 
 |Definition|
 |---------|
-| En følge \\(\\{x_n\\}\\) konvergerer mod \\(L\\), hvis og kun hvis: \\[\forall \varepsilon>0\ \exists N:\quad n\geq N\quad \Rightarrow\quad \|x_n-L\|<\varepsilon\\] Hvis en følge konvergerer, skriver vi: \\[\lim_{n\to \infty} x_n=L\\] Tallet \\(L\\) kaldes *grænsen* for følgen. Hvis en følge ikke konvergerer, så divergerer den.|
+| En følge \\(\\{x_n\\}\\) konvergerer mod \\(L\\), hvis og kun hvis: \\[\forall \varepsilon>0\quad \exists N:\quad \forall n\geq N\quad \Rightarrow\quad \|x_n-L\|<\varepsilon\\] Hvis en følge konvergerer, skriver vi: \\[\lim_{n\to \infty} x_n=L\\] Tallet \\(L\\) kaldes *grænsen* for følgen. Hvis en følge ikke konvergerer, så divergerer den.|
 
 ### Eksempel 1 (igen)
 Vi vil nu vise, at følgen: \\(\left\\{\frac{1}{n}\right\\}\\) konvergerer mod 0. Det vil sige, at \\(L=0\\). Jobbet er nu, at vi forestiller os en generel fejl \\(\varepsilon\\) og så skal vi finde \\(N\\). Vi begynder med at se på fejlen: \\[|x_n-L|=|\frac{1}{n}-0|=|\frac{1}{n}|=\frac{1}{n}\\]
@@ -59,7 +58,7 @@ Det betyder, at hvis fx den generelle fejl \\(\varepsilon =1\\), så skal \\(N> 
 ### Eksempel 2 (igen)
 Følgen \\(\left\\{ (-1)^{n}\right\\}\\) kan vi ikke vise konvergerer, da den divergerer, men hvordan viser vi at den gør det? Svaret er, at vi antager, at den konvergerer og viser, at det giver problemer. 
 
-Antag at følgen \\[\left\\{ (-1)^{n}\right\\}\\] har en grænse \\(L\\), så gælder det at \\(|(-1)^{n}-L|\\) kan gøres mindre end \\(\varepsilon\\), men vi har, at når \\(n\\) er lige så gælder \\(|1-L|\\) og når \\(n\\) er ulige så gælder \\(|-1-L|\\). Enten er \\(|1-L|\\) eller \\(|-1-L|\\) mindst, men uanset hvad så kan et \\(\varepsilon\\) mindre end det forhindre, at der kan findes et \\(N\\).
+Antag, at følgen \\[\left\\{ (-1)^{n}\right\\}\\] har en grænse \\(L\\), så gælder det, at \\(|(-1)^{n}-L|\\) kan gøres mindre end \\(\varepsilon\\), men vi har, at når \\(n\\) er lige, så gælder \\(|1-L|\\) og når \\(n\\) er ulige så gælder \\(|-1-L|\\). Enten er \\(|1-L|\\) eller \\(|-1-L|\\) mindst, men uanset hvad så kan et \\(\varepsilon\\) mindre end det forhindre, at der kan findes et \\(N\\).
 
 ### Eksempel 3
 Det tredje eksempel er følgen:
@@ -71,17 +70,17 @@ Dermed er det faktisk ikke én følge, men derimod uendelig mange følger, en fo
 \\[2^1,\ 2^2,\ 2^3,\ 2^4,\ \ldots\\]
 Som vi kan regne ud til: 
 \\[2,\ 4,\ 8,\ 16,\ \ldots\\]
-Dermed ser det ud til at følgen divergerer, idet den vokser uden grænser. Hvis \\(x=-2\\), så får vi følgen:
+Dermed ser det ud til, at følgen divergerer, idet den vokser uden grænser. Hvis \\(x=-2\\), så får vi følgen:
 \\[(-2)^1,\ (-2)^2,\ (-2)^3,\ (-2)^4,\ \ldots\\]
 Som vi kan regne ud til:
 \\[-2,\ 4,\ -8,\ 16,\ \ldots\\]
-Igen ser følgen ikke ud til at konvergerer.
+Igen ser følgen ikke ud til at konvergere.
 
 Spørgsmål er så om der er nogle værdier for \\(x\\), hvor følgen konvergerer. Der er umiddelbart værdien \\(x=1\\), fordi:
 \\[1^1,\ 1^2,\ 1^3,\ 1^4,\ \ldots\\]
 Hvilket giver:
 \\[1,\ 1,\ 1,\ 1,\ \ldots\\]
-Ergo konvergerer følgen til 1 i dette tilfælde. Et lignende argument kan laves for \\(x=0\\), som konvergerer mod 0. Vi kan også let vise at hvis \\(x=-1\\), så får vi følgen fra eksempel 2, som ikke er konvergent. Men hvad så med de tal der ligger mellem -1 og 1? Svaret er, at følgen konvergerer mod 0 i disse tilfælde. Vi formulerer nu en sætning, som vi derefter beviser.
+Ergo konvergerer følgen til 1 i dette tilfælde. Et lignende argument kan laves for \\(x=0\\), som konvergerer mod 0. Vi kan også let vise, at hvis \\(x=-1\\), så får vi følgen fra eksempel 2, som ikke er konvergent. Men hvad så med de tal, der ligger mellem -1 og 1? Svaret er, at følgen konvergerer mod 0 i disse tilfælde. Vi formulerer nu en sætning, som vi derefter beviser.
 
 |Sætning 1|
 |--|
@@ -90,13 +89,13 @@ Ergo konvergerer følgen til 1 i dette tilfælde. Et lignende argument kan laves
 | 2. \\(\lim_{n\to \infty}(x^n)=1\\), hvis \\(x=1\\)|
 | 3. For alle andre \\(x\\) divergerer følgen.|
 
-**Bevis:** Vi har klaret punkt 2 og 3 og \\(x=0\\) i tilfælde 1, i diskussionen oven for. Så vi vil antage at \\(-1 < x <1\\) og \\(x\neq 0\\). Vi skal undersøge fejlen \\[|x^n-L|=|x^n-0|=|x^n|=|x|^n\\]
+**Bevis:** Vi har klaret punkt 2 og 3, og \\(x=0\\) i tilfælde 1, i diskussionen oven for. Så vi vil antage, at \\(-1 < x <1\\) og \\(x\neq 0\\). Vi skal undersøge fejlen \\[|x^n-L|=|x^n-0|=|x^n|=|x|^n\\]
 Så hvis vi har en generel fejl \\(\varepsilon>0\\), så skal vi finde \\(N\\).
 \\[|x|^N<\varepsilon\\]
 Vi løser ligningen ved at tage logaritmen på begge sider. (Det går godt da \\(|x|>0\\) ud fra antagelsen).
 \\[\log(|x|^N)<\log(\varepsilon)\\]
 \\[N\cdot\log|x|<\log(\varepsilon)\\]
-Da \\(|x|<1\\), gælder det at \\(\log|x|<0\\) og vi vender derfor ulighedstegnet, når vi dividerer.
+Da \\(|x|<1\\), gælder det at \\(\log|x|<0\\), og vi vender derfor ulighedstegnet, når vi dividerer.
 \\[N>\frac{\log(\varepsilon)}{\log|x|}\\]
 Dette er også sandt om alle \\(n\geq N\\), hvorfor følgen konvergerer. \\(\square\\)
 
@@ -113,7 +112,7 @@ Vi laver en tabel med forskellige generelle fejl. For at få pæne tal vælger v
 Det fjerde og sidste eksempel er følgen:
 \\[x_{n+1}=x_n-\frac{x_n^2-2}{2\cdot x_n},\quad \forall n\ x_n\neq 0,\ \\]
 
-Denne følge er særlig, idet den anvender et tidligere nummer i rækken til at beregne det næste nummer. Det kaldes en *rekursiv* følge. Spørgsmålet er om den konvergerer? For kunne anvende følgen er vi nødt til at vælge det første tal. For nemheds skyld vælger vi at \\(x_1=1\\). Nu kan vi beregne \\(x_2\\)
+Denne følge er særlig, idet den anvender et tidligere nummer i rækken til at beregne det næste nummer. Det kaldes en *rekursiv* følge. Spørgsmålet er om den konvergerer? For kunne anvende følgen er vi nødt til at vælge det første tal. For nemheds skyld vælger vi, at \\(x_1=1\\). Nu kan vi beregne \\(x_2\\)
 \\[x_2 = x_1-\frac{x_1^2-2}{2\cdot x_1}\\]
 Vi indsætter \\(x_1=1\\):
 \\[x_2= 1-\frac{1^2-2}{2\cdot 1}=1-\frac{-1}{2}=1{,}5\\]
@@ -135,7 +134,7 @@ Hvis \\(\\{x_n\\}\\) og \\(\\{y_n\\}\\) er konvergente følger, så gælder
 2. \\[\lim_{n\to\infty} (x_n\cdot y_n)=\lim_{n\to\infty} (x_n)\cdot\lim_{n\to\infty}(y_n)\\]
 3. \\[\lim_{n\to\infty} \left(\frac{x_n}{ y_n}\right)=\frac{\lim_{n\to\infty} (x_n)}{\lim_{n\to\infty}(y_n)}\\]
 
-Hvis vi antager at vores følge konvergerer mod \\(L\\), så kan vi lave følgende udregning:
+Hvis vi antager, at vores følge konvergerer mod \\(L\\), så kan vi lave følgende udregning:
 \\[\lim_{n\to\infty}(x_{n+1})=\lim_{n\to\infty}\left(x_n-\frac{x_n^2-2}{2\cdot x_n}\right)\\]
 \\[\lim_{n\to\infty}(x_{n+1})=\lim_{n\to\infty}\left(x_n\right)-\lim_{n\to\infty}\left(\frac{x_n^2-2}{2\cdot x_n}\right)\\]
 \\[\lim_{n\to\infty}(x_{n+1})=\lim_{n\to\infty}\left(x_n\right)-\left(\frac{\lim_{n\to\infty}(x_n^2-2)}{\lim_{n\to\infty}(2\cdot x_n)}\right)\\]
@@ -149,7 +148,7 @@ Fra regneregel 1 og regneregel 2 (husk \\(x^2=x\cdot x\\)) får vi:
 \\[L^2-2=0\\]
 \\[L^2=2\\]
 \\[L=\pm\sqrt{2}\\]
-Hvis vi vælger et positivt udgangspunkt er vores grænse \\(L=\sqrt{2}\\). Med andre ord har vi en følge der kan beregne kvadratroden af 2. Man kan vise (hvilket vi ikke vil gøre), at ca. \\(n=6\\), er nok til, at en computer ikke kan opbevare flere decimaler. Generelt vil følgen:
+Hvis vi vælger et positivt udgangspunkt, er vores grænse \\(L=\sqrt{2}\\). Med andre ord har vi en følge, der kan beregne kvadratroden af 2. Man kan vise (hvilket vi ikke vil gøre), at ca. \\(n=6\\), er nok til, at en computer ikke kan opbevare flere decimaler. Generelt vil følgen:
 
 \\[x_{n+1}=x_n-\frac{x_n^2-a}{2\cdot x_n},\quad \forall n\ x_n\neq 0,\ \\]
 

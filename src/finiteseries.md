@@ -15,7 +15,7 @@ Nu går der en måned og Fritz indsætter igen 100 kr. Men før det sker tilskri
 Nu går der en måned igen og det samme sker. Banken tilskriver rente inden, der indsættes penge.
 \\[A_2=202\cdot 1{,}02+100=206,04+100=206,04\\]
 
-Hvis vi tager tal eksemplet og indfører nogle betegnelser.
+Hvis vi tager taleksemplet og indfører nogle betegnelser.
 
 | Symbol | betydning |
 |--|--|
@@ -42,7 +42,7 @@ oversættes til:
 
 Det vil sige, at generelt kan vi beregne beløbet på kontoen med følgen: \\[A_n = A_{n-1}\cdot(1+r)+b,\quad A_0=b\\]
 
-Vi vil gerne ende med formeludtryk, som vi kan sætte ind i og regne opsparingen ud med en udregning. Så lad os prøve at udrulle følgen. Vi begynder med \\(A_n\\):
+Vi vil gerne ende med formeludtryk, som vi kan sætte ind i og regne opsparingen ud med en formel. Så lad os prøve at udrulle følgen. Vi begynder med \\(A_n\\):
 \\[A_n=A_{n-1}\cdot (1+r)+b\\]
 Indsætter \\(A_{n-1}=A_{n-2}\cdot(1+r)+b\\):
 \\[A_n=(A_{n-2}\cdot(1+r)+b)\cdot(1+r)+b\\]
@@ -50,7 +50,7 @@ Indsætter \\(A_{n-1}=A_{n-2}\cdot(1+r)+b\\):
 Indsætter \\(A_{n-2}=A_{n-3}\cdot(1+r)+b\\):
 \\[A_n=(A_{n-3}\cdot(1+r)+b)\cdot(1+r)^2+b\cdot (1+r)+b\\]
 \\[A_n=A_{n-3}\cdot(1+r)^3+b\cdot(1+r)^2+b\cdot (1+r)+b\\]
-Vi kan se at den største eksponent \\(3\\) og \\(A_{n-3}\\) følges ad, så når vi når ned til \\(A_0=A_{n-n}\\), har vi:
+Vi kan se, at den største eksponent \\(3\\) og \\(A_{n-3}\\) følges ad, så når vi når ned til \\(A_0=A_{n-n}\\), har vi:
 \\[A_n=A_0\cdot(1+r)^n+b\cdot(1+r)^{n-1}+\cdots+b\cdot(1+r)+b\\]
 Men \\(A_0=b\\), så der er \\(b\\) som faktor i alle led, hvilket betyder, at vi kan sætte \\(b\\) uden for en parentes.
 \\[A_n=b\cdot\left((1+r)^n+(1+r)^{n-1}+\cdots+(1+r)+1 \right)\\] 
@@ -59,7 +59,7 @@ Dermed har vi en lang sum (plusstykke) inde i parentesen. Det vil være rart at 
 
 ## Den geometriske række 
 
-Oven over har vi summen: \\((1+r)^n+(1+r)^{n-1}+\cdots+(1+r)+1 \\). Vi vil kalde \\(x=1+r\\), hvilket **Den geometriske række**:
+Oven over har vi summen: \\((1+r)^n+(1+r)^{n-1}+\cdots+(1+r)+1 \\). Vi vil kalde \\(x=1+r\\), hvilket kaldes  **den geometriske række**:
 \\[x^n+x^{n-1}+\cdots+x^2+x+1\\]
 
 Vi vil bevise følgende:

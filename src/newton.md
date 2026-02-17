@@ -1,24 +1,24 @@
 # Newtons metode
 
-Dette kapitel handler om newtons metode. Metoden anvendes til at løse ligninger, som vi generelt vil have svært ved. Metoden kan også anvendes til at bestemme kvadratrødder eller lignende. 
+Dette kapitel handler om Newtons metode. Metoden anvendes til at løse ligninger, som vi generelt vil have svært ved. Metoden kan også anvendes til at bestemme kvadratrødder eller lignende. 
 
 Newtons metode anvendes til at løse ligninger på formen: \\[f(x)=0\\] hvilket vi normalt kalder nulpunkter. Men hvad med fx ligningen: \\[e^x=x+1\\] Den kan vi lave om, så den bliver til \\[x^x-x-1=0\\] Helt generelt kan alle ligninger på formen \\(f(x)=g(x)\\) laves om til \\(f(x)-g(x)=0\\), hvorfor det er nok at lede efter nulpunkter. 
 
-Udgangspunktet for metoden er, at vores \\(f\\) er en differentiabel funktion (og dermed også kontinuert). Vi ved, at \\(f\\) kan tilnærmes med en tangent \\(y=f'(x_0)\cdot (x-x_0)+f(x_0)\\) i alle punkter. Så vi laver et gæt på det vi tror er nulpunktet og sætter vi tangenten til 0 og løser ligningen:
+Udgangspunktet for metoden er, at vores \\(f\\) er en differentiabel funktion (og dermed også kontinuert). Vi ved, at \\(f\\) kan tilnærmes med en tangent \\(y=f'(x_0)\cdot (x-x_0)+f(x_0)\\) i alle punkter. Så vi laver et gæt, på det vi tror er nulpunktet, og sætter vi tangenten til 0, og løser ligningen:
 
 \\[0=f'(x_0)\cdot(x-x_0)+f(x_0)\\]
 \\[-f(x_0)=f'(x_0)\cdot(x-x_0)\\]
 \\[-\frac{f(x_0)}{f'(x_0)}=x-x_0\\]
 \\[x_0-\frac{f(x_0)}{f'(x_0)}=x\\]
 
-Så vores nye bud på en løsning til ligningen er vores \\(x\\) oven for. Hvis det ikke viser sig at være løsningen kan vi prøve igen med \\(x\\) som et nyt gæt. Figur 1 viser, hvordan processen fungerer.
+Så vores nye bud på en løsning til ligningen er vores \\(x\\) oven for. Hvis det ikke viser sig at være løsningen, kan vi prøve igen med \\(x\\) som et nyt gæt. Figur 1 viser, hvordan processen fungerer.
 
 |Figur 1|
 |:--:|
 |![Newtons metode](newton.png)|
 |Newtons metode anvendt på \\(f(x)=e^x-1\\) med begyndelsesværdi \\(x_1=3\\). Der kan ses de første fire iterationer. |
 
-Newtons metode er altså en følge der er givet ved formlen:
+Newtons metode er altså en følge, der er givet ved formlen:
 \\[x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}\\]
 Vi skal dog gætte på en begyndelsesværdi \\(x_1\\) for at komme i gang. 
 
@@ -47,7 +47,7 @@ Dermed er \\(x_3=\frac{1}{2}\cdot\left(2+\frac{3}{2}\right)=\frac{7}{4}\\). I en
 | 4 | \\(\frac{97}{56}\\) | \\(\frac{18817}{10864}\approx \underline{1{,}7320508}100147275405\\)|
 | 5 | \\(\frac{18817}{10864}\\) | \\(\frac{708158977}{408855776}\approx \underline{1{,}73205080756887729}53\\)|
 
-Vi bemærker, at antallet af korrekte cifre fordobles mellem hver udregning. Ofte vil 6 udregninger være nok på en computer, da der ikke kan regnes med flere decimaler internt i processoren.
+Vi bemærker, at antallet af korrekte cifre ca. fordobles mellem hver udregning. Ofte vil 6 udregninger være nok på en computer, da der ikke kan regnes med flere decimaler internt i processoren.
 
 ## Eksempel 2
 
@@ -64,7 +64,7 @@ Men vi vil alligevel afprøve newtons metode på denne ligning. Vi vælger \\(x_
 | 6 | \\(0{,}04379570901\\) |
 | 7 | \\(0{,}02205769273\\) |
 | 8 | \\(0{,}01106940034\\) |
-| 9 | Her gik computeren kold |
+| 9 | Her gik maple kold |
 
 I modsætning til det første eksempel, så går det meget langsomt med at komme i nærheden af 0. Og ved \\(x_9\\) gik computeren (maple) død og kunne ikke regne videre. Så hvad er problemet? Hvis vi ser på formlen for Newtons metode: \\[x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}\\]
 Så kan vi se, at der divideres med \\(f'(x_n)\\). Vi må ikke dividere med 0, så lad os se om \\(f'(x)=0\\)?
@@ -89,7 +89,7 @@ Dog hvis Newtons metode konvergerer, så er den hurtig (hvilket vi ikke vil bevi
 |--|
 | Hvis \\(x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}\\) konvergerer til \\(r\\) for en passende begyndelsesværdi, så er \\(f(r)=0\\) |
 
-**Bevis:** Vi har at \\(\lim_{n\to\infty}(x_n)=r\\). Dermed har vi:
+**Bevis:** Vi har, at \\(\lim_{n\to\infty}(x_n)=r\\). Dermed har vi:
 \\[x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}\\]
 \\[\lim_{n\to\infty} (x_{n+1})=\lim_{n\to\infty}\left(x_n-\frac{f(x_n)}{f'(x_n)}\right)\\]
 \\[r=\lim_{n\to\infty}(x_n)-\lim_{n\to\infty}\left(\frac{f(x_n)}{f'(x_n)}\right)\\]
