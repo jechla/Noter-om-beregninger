@@ -69,7 +69,7 @@ Vi kan nu definere, hvad vi mener med taylorpolynomiet for en funktion.
 
 | Definition |
 |--|
-| Hvis funktionen \\(f\\) kan differentieres uendelig mange gange i \\(x=c\\), så kaldes rækken: \\[\sum_{k=0}^{\infty} \frac{f^{(k)}(c)}{k!}\cdot (x-c)^k\\] for *taylorpolynomiet* for \\(f\\). Bemærk at \\(0!=1\\) pr. definition.|
+| Hvis funktionen \\(f\\) kan differentieres uendelig mange gange i \\(x=c\\), så kaldes rækken: \\[\sum_{k=0}^{\infty} \frac{f^{(k)}(c)}{k!}\cdot (x-c)^k\\] for *taylorpolynomiet* for \\(f\\) omkring \\(c\\). Bemærk at \\(0!=1\\) pr. definition.|
 
 Vi giver straks nogle eksempler.
 
