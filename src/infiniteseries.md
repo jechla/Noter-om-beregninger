@@ -71,7 +71,11 @@ Vi kan nu definere, hvad vi mener med taylorpolynomiet for en funktion.
 |--|
 | Hvis funktionen \\(f\\) kan differentieres uendelig mange gange i \\(x=c\\), så kaldes rækken: \\[\sum_{k=0}^{\infty} \frac{f^{(k)}(c)}{k!}\cdot (x-c)^k\\] for *taylorpolynomiet* for \\(f\\) omkring \\(c\\). Bemærk at \\(0!=1\\) pr. definition.|
 
-Vi giver straks nogle eksempler.
+Da vi aldrig kan lægge uendelig mange tal sammen, så anvendes taylorpolynomiet til at tilnærme en funktion. Hvis vi regner tilstrækkelig mange led ud kan vi give et bud på en funktionsværdi. Følgende figur viser grafen for sinus og forskellige taylorpolynomier, hvor man kun har taget nogle led med. Jo flere led, jo tættere kommer taylorpolynomiet på sinus.
+
+![Animation af taylorpolynomiers tilnærmelse til sinus](./taylor.gif)
+
+Vi vil vise, hvordan et taylorpolynomium kan beregnes for to funktioner, nemlig den naturlige eksponentialfunktion og sinus.
 
 ### Den naturlige eksponentialfunktion
 
@@ -104,5 +108,7 @@ Da ulige tal kan skrives \\(2k+1\\), får vi:
 \\[\sin(x)=\sum_{k=0}^{\infty} \frac{(-1)^k}{(2k+1)!}\cdot x^{2k+1}\\]
 Man kan på samme måde viser at:
 \\[\cos(x)=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}\cdot x^{2k}\\]
+
+## Vurdering af fejl.
 
 ## Beregning af \\(\pi\\)
