@@ -20,7 +20,11 @@ Det første eksempel er følgen:
 
 Her angiver vi en metode til at beregne de enkelte tal i en følge. Fx når \\(n=1\\) så er det første tal i følgen \\(\left\\{\frac{1}{1}\right\\}=1\\), når \\(n=2\\), så er det andet tal i følgen: \\(\left\\{\frac{1}{2}\right\\}=\frac{1}{2}\\), osv. Dermed kan opskrive de første tal i følgen sådan:
 \\[1,\ \frac{1}{2},\ \frac{1}{3},\ \frac{1}{4},\ \frac{1}{5},\ \ldots\\]
-Det ser ud til, at tallene i følgen bliver mindre og mindre, og kommer tættere og tættere på 0, faktisk vil tal nummer 1 mio, være \\(\frac{1}{1000000}\\). Noget tyder på, at jo højere vi kommer op i numrene i følgen, jo tættere på kommer vi på 0. Vi siger, at følgen *konvergerer* mod 0. Vi vil gøre dette begreb mere præcist neden for. Vi giver dog lige et eksempel til.
+Det ser ud til, at tallene i følgen bliver mindre og mindre, og kommer tættere og tættere på 0, faktisk vil tal nummer 1 mio, være \\(\frac{1}{1000000}\\). Følgende figur viser de første 10 elementer i følgen:
+
+![punktplot til eksempel 1](./seq1.png)
+
+ Noget tyder på, at jo højere vi kommer op i numrene i følgen, jo tættere på kommer vi på 0. Vi siger, at følgen *konvergerer* mod 0. Vi vil gøre dette begreb mere præcist neden for. Vi giver dog lige et eksempel til.
 
 
 ### Eksempel 2
@@ -30,7 +34,11 @@ Det andet eksempel er følgen:
 Igen har vi en metode til at beregne de enkelte tal i følgen. Fx når \\(n=1\\) så er det første tal i følgen \\(\left\\{(-1)^1\right\\}=-1\\), når \\(n=2\\), så er det andet tal i følgen: \\(\left\\{(-1)^2\right\\}=1\\), osv. Dermed kan opskrive de første tal i følgen sådan:
 \\[-1,\ 1,\ -1,\ 1,\ -1,\ \ldots\\]
 
-Med andre ord skifter følgen mellem tallene -1 og 1, uanset hvilke numre i følgen vi er ved. Dermed nærmer følgen sig ikke noget, og vi siger, at den ikke konvergerer, men derimod *divergerer*.
+Med andre ord skifter følgen mellem tallene -1 og 1, uanset hvilke numre i følgen vi er ved. Følgende figur viser de første 10 elementer for følgen:
+
+![punktplot til eksempel 2](./seq2.png)
+
+Dermed nærmer følgen sig ikke noget, og vi siger, at den ikke konvergerer, men derimod *divergerer*.
 
 ## Konvergens
 Vi vil nu give en definition af begrebet konvergens. Følgen i eksempel 1 konvergerer mod 0. Men da følgen består af brøker, kan den aldrig blive 0, så konvergensen består i, at følgen kan komme lige så tæt på 0, som vi har lyst til. Forskellen mellem følgen \\( \\{x_n\\}\\) og det følgen konvergerer mod \\(L\\) skrives \\(|x_n-L|\\), hvor \\(|\ |\\) er den numeriske værdi. Dette vil vi kalde *fejlen*, og vi vil benytte det græske bogstav epsilon \\(\varepsilon\\) til at betegne en generel fejl.
@@ -70,7 +78,11 @@ Dermed er det faktisk ikke én følge, men derimod uendelig mange følger, en fo
 \\[2^1,\ 2^2,\ 2^3,\ 2^4,\ \ldots\\]
 Som vi kan regne ud til: 
 \\[2,\ 4,\ 8,\ 16,\ \ldots\\]
-Dermed ser det ud til, at følgen divergerer, idet den vokser uden grænser. Hvis \\(x=-2\\), så får vi følgen:
+Dermed ser det ud til, at følgen divergerer, idet den vokser uden grænser. Figuren herunder viser de første 10 elementer:
+
+![punktplot til eksempel 3](./seq3.png)
+
+Hvis \\(x=-2\\), så får vi følgen:
 \\[(-2)^1,\ (-2)^2,\ (-2)^3,\ (-2)^4,\ \ldots\\]
 Som vi kan regne ud til:
 \\[-2,\ 4,\ -8,\ 16,\ \ldots\\]
@@ -80,7 +92,11 @@ Spørgsmål er så om der er nogle værdier for \\(x\\), hvor følgen konvergere
 \\[1^1,\ 1^2,\ 1^3,\ 1^4,\ \ldots\\]
 Hvilket giver:
 \\[1,\ 1,\ 1,\ 1,\ \ldots\\]
-Ergo konvergerer følgen til 1 i dette tilfælde. Et lignende argument kan laves for \\(x=0\\), som konvergerer mod 0. Vi kan også let vise, at hvis \\(x=-1\\), så får vi følgen fra eksempel 2, som ikke er konvergent. Men hvad så med de tal, der ligger mellem -1 og 1? Svaret er, at følgen konvergerer mod 0 i disse tilfælde. Vi formulerer nu en sætning, som vi derefter beviser.
+Ergo konvergerer følgen til 1 i dette tilfælde. Et lignende argument kan laves for \\(x=0\\), som konvergerer mod 0. Vi kan også let vise, at hvis \\(x=-1\\), så får vi følgen fra eksempel 2, som ikke er konvergent. Men hvad så med de tal, der ligger mellem -1 og 1? Svaret er, at følgen konvergerer mod 0 i disse tilfælde. Figuren herunder viser et punktplot for følgen med \\(x=\frac{1}{2}\\), som hurtigt komme ned mod nul.
+
+![punktplot til eksempel 4](./seq4.png)
+
+Vi formulerer nu en sætning, som vi derefter beviser.
 
 |Sætning 1|
 |--|
