@@ -79,11 +79,14 @@ Omskriv følgende plusstykker til sumnotation (begynd ved \\(k=0\\)):
 2. \\(1-x+x^2-x^3+x^4-x^5\\)
 
 ### Opgave 12
-Opskriv mindst 4 led af taylorpolynomiet for følgende funktioner omkring \\(c\\).
-1. \\(f(x)=\ln(x)\\) og \\(c=1\\).
-2. \\(f(x)=e^{2x}\\) og \\(c=0\\).
-3. \\(f(x)= \tan(x)\\) og \\(c=0\\).
-4. \\(f(x)=\frac{1}{1-x}\\) og \\(c=0\\).
+Opskriv mindst 4 led af taylorpolynomiet for følgende funktioner omkring \\(c=0\\).
+1. \\(f(x)=\ln(x+1)\\).
+2. \\(f(x)=e^{2x}\\).
+3. \\(f(x)= \tan(x)\\).
+4. \\(f(x)=\frac{1}{1-x}\\).
 
 ### Opgave 13
+Anvend en computer til at beregne residualerne for de taylorpolynomier du beregnede i opgave 12. Lad \\(x=1\\)   for funktion 1,2, og 3. I det sidste tilfælde lad \\(x=\frac{1}{2}\\).
+
+### Opgave 14
 Eftervis påstanden om taylorpolynomiet for cosinus. 

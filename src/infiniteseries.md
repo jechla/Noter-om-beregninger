@@ -106,9 +106,28 @@ Vi bemærker, at det kun er de ulige tal, der giver noget til summen idet fx \\(
 \\[0+x+0-\frac{x^3}{3!}+0+\frac{x^5}{5!}+\ldots =x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+\ldots\\]
 Da ulige tal kan skrives \\(2k+1\\), får vi:
 \\[\sin(x)=\sum_{k=0}^{\infty} \frac{(-1)^k}{(2k+1)!}\cdot x^{2k+1}\\]
-Man kan på samme måde viser at:
+Man kan på samme måde vise at:
 \\[\cos(x)=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}\cdot x^{2k}\\]
 
-## Vurdering af fejl.
+## Vurdering af fejl
+Vi kan aldrig beregne alle led i et taylorpolynomium. Hvor vi er nødt til at stoppe på et tidspunkt. Vi indfører det begrænsede taylorpolynomium \\(T_n(x)\\), som er givet ved:
+
+\\[T_n(x)=\sum_{k=0}^n \frac{f^{(k)(x)}}{k!}\cdot (x-c)^k\\]
+
+Med andre ord stopper vi summen ved \\(n\\). Vores begrænsede taylorpolynomium vil ikke være præcist, da vi ikke har alle led med. Hvis polynomiet er en tilnærmning til \\(f(x)\\), så er forskellen mellem polynomium og funktion et mål for fejlen. Det vil vi betegne \\(R_n(x)\\) og kalde *residualet*. Det gælder dermed:
+\\[R_n(x)=f(x)-T_n(x)\\]
+Eller:
+\\[f(x)=T_n(x)+R_n(x)\\]
+Men hvordan beregner vi \\(R_n(x)\\)? En måde er ved følgende integral:
+\\[R_n(x)=\int_{c}^{x}\frac{f^{(n+1)}(t)}{n!}\cdot(x-t)^n\ dt\\]
+
+Vi giver et eksempel med \\(f(x)=e^x\\). Vi har fundet taylorpolynomiet for \\(f\\) omkring \\(c=0\\) oven for. Så vi kan undersøge residualet for \\(T_4(x)=\sum_{k=0}^4 \frac{x^k}{k!}\\), når \\(x=1\\). Med andre ord, så ser vi på, hvor stor fejl der på \\(T_4(1)\\) i forholde til \\(f(1)=e^1=e\\). Vi skal bruge formlen for residualet:
+\\[R_n(x)=\int_{c}^{x}\frac{f^{(n+1)}(t)}{n!}\cdot(x-t)^n\ dt\\]
+Her kender vi en del af bogstaverne i forvejen: \\(c=0\\), \\(x=1\\) og \\(n=4\\). Vi mangler dog at beregne \\(f^{(n+1)}(t)\\). Da vores funktion er \\(f(x)=e^x\\), ved vi, at \\(f^{5}(t)=e^t\\), så vores integral bliver:
+\\[R_4(1)=\int_{0}^{1}\frac{e^t}{4!}\cdot(1-t)^4\ dt\\]
+En computer fortæller os, at det giver \\(\approx 0{,}01\\). Så udregningen er kun korrekt inden for en decimal. Generelt vil det være således, at jo længere \\(x\\) er fra \\(c\\), jo flere led skal der anvendes.
+
+> [!Note]
+> Bemærk to ting. For det første, behøver vi ikke kende \\(T_n(x)\\) for at kunne beregne residualet. For det andet, findes der andre og mere effektive metoder til at bestemme residualet, men de er mere komplicerede at forklare. Et bevis for residualet ligger uden for disse noter.
 
 ## Beregning af \\(\pi\\)
