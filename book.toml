@@ -2,14 +2,18 @@
 title = "Noter om beregninger"
 authors = ["Jens Chr. Larsen"]
 language = "da"
+description = "Noterne dækker følger, rækker og taylorpolynomier forklaret for gymnasieelever"
+
 
 
 
 [output.html]
 mathjax-support = true
+git-repository-url = "https://github.com/jechla/Noter-om-beregninger"
 
-[output.pdf]
-landscape = false
-scale = 0.7
+
+# [output.pdf]
+# landscape = false
+# scale = 0.7
 
 

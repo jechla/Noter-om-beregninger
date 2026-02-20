@@ -130,4 +130,3 @@ En computer fortæller os, at det giver \\(\approx 0{,}01\\). Så udregningen er
 > [!Note]
 > Bemærk to ting. For det første, behøver vi ikke kende \\(T_n(x)\\) for at kunne beregne residualet. For det andet, findes der andre og mere effektive metoder til at bestemme residualet, men de er mere komplicerede at forklare. Et bevis for residualet ligger uden for disse noter.
 
-## Beregning af \\(\pi\\)
