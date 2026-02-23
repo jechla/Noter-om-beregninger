@@ -112,7 +112,7 @@ Man kan på samme måde vise at:
 ## Vurdering af fejl
 Vi kan aldrig beregne alle led i et taylorpolynomium. Hvor vi er nødt til at stoppe på et tidspunkt. Vi indfører det begrænsede taylorpolynomium \\(T_n(x)\\), som er givet ved:
 
-\\[T_n(x)=\sum_{k=0}^n \frac{f^{(k)(x)}}{k!}\cdot (x-c)^k\\]
+\\[T_n(x)=\sum_{k=0}^n \frac{f^{(k)}(c)}{k!}\cdot (x-c)^k\\]
 
 Med andre ord stopper vi summen ved \\(n\\). Vores begrænsede taylorpolynomium vil ikke være præcist, da vi ikke har alle led med. Hvis polynomiet er en tilnærmning til \\(f(x)\\), så er forskellen mellem polynomium og funktion et mål for fejlen. Det vil vi betegne \\(R_n(x)\\) og kalde *residualet*. Det gælder dermed:
 \\[R_n(x)=f(x)-T_n(x)\\]
